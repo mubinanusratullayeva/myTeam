@@ -1,0 +1,75 @@
+@use'../variables';
+@use'../mixins';
+header{
+    background-image: url(../images/bg-pink.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+background-position-y: bottom;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx){
+background-image: url(../images/bg-pink2x.png);
+background-repeat: no-repeat;
+background-position-x: right;
+background-position-y: bottom;
+}
+    padding: 73px 0 120px 0;
+    background-color: variables.$main-color;
+    nav{
+        @include mixins.flexbox(center, space-between);
+        .navbar{
+            @include mixins.flexbox(center, space-between);
+            min-width: 80%;
+            &__menu{
+                @include mixins.flexbox(center, space-between);
+                column-gap: 40px;
+                &-link{
+                    padding: 10px 0;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: variables.$secondary-color;
+                }
+                &-link:hover{
+                    color: variables.$primary-color;
+                }
+            }
+            &__btn{
+                @include mixins.btn(variables.$secondary-color, variables.$secondary-color);
+            }
+            &__btn:hover{
+                transition: 0.3s;
+                color: variables.$footer-bg;
+                background-color: variables.$secondary-color;
+                border: 2px solid #ffffff00;
+            }
+        }
+    }
+    .hero{
+        margin-top: 120px;
+        @include mixins.flexbox(center, space-between);
+        &__title{
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 100px;
+        }
+        &__description{
+            &-line{
+            width: 50px;
+            height: 4px;
+            border: none;
+            background-color: variables.$primary-color;
+            }
+            &-desc{
+            margin-top: 40px;
+            max-width: 698px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            }
+        }
+    }
+}

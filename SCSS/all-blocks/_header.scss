@@ -26,7 +26,9 @@ nav ul {
 }
 
 nav ul a {
-    color: variables.$secondary-color
+    font-size: 18px;
+    line-height: 28px;
+    color: variables.$secondary-color;
 }
 
 nav ul a:hover {
@@ -42,7 +44,7 @@ nav button {
 nav button:hover {
     color: variables.$footer-bg;
     background-color: variables.$secondary-color;
-    border: #ffffff00;
+    border: 2px solid #ffffff00;
 }
 
 nav button {
