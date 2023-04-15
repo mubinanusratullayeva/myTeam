@@ -125,7 +125,6 @@ h1 span {
 }
 
 .header-img {
-  justify-self: flex-end;
   padding-top: 155px;
 }
 
@@ -134,6 +133,87 @@ h1 span {
   align-items: end;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.teams {
+  background: #012F34;
+  background-image: url(../images/bg-section1.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.section1-display_flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: default;
+}
+
+.small-cards {
+  padding-bottom: 140px;
+  padding-top: 198px;
+  row-gap: 32px;
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.div1-hr {
+  padding-top: 140px;
+}
+
+.div1-hr hr {
+  border: none;
+  width: 50px;
+  height: 4px;
+  background: #F67E7E;
+}
+
+h2 {
+  padding-top: 54px;
+  width: 445px;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.small-card1 {
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 23px;
+}
+
+.texts-card_small h3 {
+  font-size: 18px;
+  line-height: 28px;
+  color: #F67E7E;
+}
+
+.texts-card_small p {
+  width: 447px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  opacity: 0.8;
+  padding-top: 16px;
+}
+
+.border-radius__img {
+  position: relative;
+  border-radius: 50%;
+  min-width: 56px;
+  height: 56px;
+  background: #2C6269;
+}
+
+.border-radius__img img {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

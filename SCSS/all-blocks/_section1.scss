@@ -1,0 +1,73 @@
+@use'../mixins';
+@use'../variables';
+.teams {
+    background: variables.$some-bg;
+    background-image: url(../images/bg-section1.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom
+}
+
+.section1-display_flex {
+    @include mixins.flexbox(flex-start, space-between);
+}
+
+.small-cards {
+    padding-bottom: 140px;
+    padding-top: 198px;
+    row-gap: 32px;
+    @include mixins.flexbox(end, flex-start, column);
+}
+
+.div1-hr {
+    padding-top: 140px;
+}
+
+.div1-hr hr {
+    border: none;
+    width: 50px;
+    height: 4px;
+    background: variables.$primary-color;
+}
+
+h2 {
+    padding-top: 54px;
+    width: 445px;
+    font-size: 48px;
+    line-height: 48px;
+    color: variables.$secondary-color;
+}
+
+.small-card1 {
+    @include mixins.flexbox(center);
+    column-gap: 23px;
+}
+
+.texts-card_small h3 {
+    font-size: 18px;
+    line-height: 28px;
+    color: variables.$primary-color;
+}
+
+.texts-card_small p {
+    width: 447px;
+    font-size: 15px;
+    line-height: 25px;
+    color: variables.$secondary-color;
+    opacity: 0.8;
+    padding-top: 16px;
+}
+
+.border-radius__img {
+    position: relative;
+    border-radius: 50%;
+    min-width: 56px;
+    height: 56px;
+    background: #2C6269;
+}
+
+.border-radius__img img {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
