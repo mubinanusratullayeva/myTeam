@@ -1,26 +1,26 @@
-@mixin flexbox($align:false, $justify:false, $fldirection:false){
-      display: flex;
-
-      @if $align{
+@mixin flexbox($align:default, $justify:default, $fldirection:default) {
+    display: flex;
+    @if $align {
         align-items: $align;
-      }@else{
+    }
+    @else {
         align-items: center;
-      }
-
-      @if $justify{
+    }
+    @if $justify {
         justify-content: $justify;
-      }@else{
+    }
+    @else {
         justify-content: space-between;
-      }
-
-      @if $fldirection{
+    }
+    @if $fldirection {
         flex-direction: $fldirection;
-      }@else{
+    }
+    @else {
         flex-direction: column;
-      }
+    }
 }
 
-@mixin btn($br-color, $t-color){
+@mixin btn($br-color, $t-color) {
     border: 2px solid $br-color;
     border-radius: 24px;
     font-family: 'Livvic';

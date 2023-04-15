@@ -1,0 +1,91 @@
+@use'../mixins';
+@use'../variables';
+header {
+    background-color: variables.$main-color;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg-icon.png);
+    background-position-y: center;
+}
+
+nav {
+    @include mixins.flexbox(center);
+    margin-top: 77px;
+    height: 48px;
+}
+
+.navbar {
+    @include mixins.flexbox(center, space-between);
+    min-width: 85%;
+}
+
+nav ul {
+    column-gap: 40px;
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+    color: variables.$secondary-color
+}
+
+nav ul a:hover {
+    color: variables.$primary-color;
+    transition: 0.3s;
+}
+
+nav button {
+    transition: 0.3s;
+    color: variables.$secondary-color;
+}
+
+nav button:hover {
+    color: variables.$footer-bg;
+    background-color: variables.$secondary-color;
+    border: #ffffff00;
+}
+
+nav button {
+    @include mixins.btn(variables.$secondary-color, variables.$secondary-color);
+}
+
+.text-dispaly {
+    @include mixins.flexbox(center, space-between);
+    padding-top: 139px;
+    min-width: 100%;
+}
+
+h1 {
+    width: 569px;
+    font-size: 100px;
+    line-height: 100px;
+    color: variables.$secondary-color;
+}
+
+h1 span {
+    color: variables.$primary-color;
+}
+
+.hr-text hr {
+    border: none;
+    width: 50px;
+    height: 4px;
+    background: variables.$Rapture-Blue;
+}
+
+.hr-text p {
+    width: 404px;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 79px;
+    color: variables.$secondary-color;
+}
+
+.header-img {
+    justify-self: flex-end;
+    padding-top: 155px;
+}
+
+.head {
+    @include mixins.flexbox(end, space-between, column);
+}
