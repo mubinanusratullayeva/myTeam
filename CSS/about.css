@@ -26,59 +26,52 @@ body {
 }
 
 header {
-  background-color: #014E56;
+  background-image: url(../images/bg-pink.png);
   background-repeat: no-repeat;
-  background-image: url(../images/bg-icon.png);
-  background-position-y: center;
+  background-position-x: right;
+  background-position-y: bottom;
+  padding: 73px 0 120px 0;
+  background-color: #014E56;
 }
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: default;
-  flex-direction: default;
-  margin-top: 77px;
-  height: 48px;
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  header {
+    background-image: url(../images/bg-pink2x.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
 }
-
-.navbar {
+header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: default;
-  min-width: 85%;
 }
-
-nav ul {
-  column-gap: 40px;
-  padding-left: 80px;
+header nav .navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+  min-width: 80%;
 }
-
-nav ul a {
+header nav .navbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+  column-gap: 40px;
+}
+header nav .navbar__menu-link {
+  padding: 10px 0;
+  font-weight: 600;
   font-size: 18px;
   line-height: 28px;
   color: #ffffff;
 }
-
-nav ul a:hover {
+header nav .navbar__menu-link:hover {
   color: #F67E7E;
-  transition: 0.3s;
 }
-
-nav button {
-  transition: 0.3s;
-  color: #ffffff;
-}
-
-nav button:hover {
-  color: #002529;
-  background-color: #ffffff;
-  border: 2px solid rgba(255, 255, 255, 0);
-}
-
-nav button {
+header nav .navbar__btn {
   border: 2px solid #ffffff;
   border-radius: 24px;
   font-family: "Livvic";
@@ -90,52 +83,36 @@ nav button {
   padding: 9px 33px 11px 32px;
   background-color: rgba(240, 248, 255, 0);
 }
-
-.text-dispaly {
+header nav .navbar__btn:hover {
+  transition: 0.3s;
+  color: #002529;
+  background-color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+header .hero {
+  margin-top: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: default;
-  padding-top: 139px;
-  min-width: 100%;
 }
-
-h1 {
-  width: 569px;
-  font-size: 100px;
+header .hero__title {
+  font-weight: 700;
+  font-size: 64px;
   line-height: 100px;
-  color: #ffffff;
 }
-
-h1 span {
-  color: #F67E7E;
-}
-
-.hr-text hr {
-  border: none;
+header .hero__description-line {
   width: 50px;
   height: 4px;
-  background: #79C8C7;
+  border: none;
+  background-color: #F67E7E;
 }
-
-.hr-text p {
-  width: 404px;
+header .hero__description-desc {
+  margin-top: 40px;
+  max-width: 698px;
+  font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  padding-top: 79px;
-  color: #ffffff;
 }
 
-.header-img {
-  justify-self: flex-end;
-  padding-top: 155px;
-}
-
-.head {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=about.css.map */
