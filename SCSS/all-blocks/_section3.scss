@@ -1,0 +1,37 @@
+@use'../mixins';
+@use'../variables';
+.started {
+    background: variables.$primary-color;
+    background-image: url(../../images/bg-section.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.text-btn {
+    @include mixins.flexbox(center, space-between)
+}
+
+.text-btn h4 {
+    padding-bottom: 76px;
+    padding-top: 76px;
+    font-size: 48px;
+    color: variables.$some-bg;
+}
+
+.text-btn button {
+    cursor: pointer;
+    font-size: 18px;
+    color: variables.$some-bg;
+    width: 153px;
+    height: 48px;
+    background-color: transparent;
+    border: 2px solid variables.$some-bg;
+    border-radius: 24px;
+    transition: 0.2s;
+}
+
+.text-btn button:hover {
+    transition: 0.2s;
+    background-color: variables.$some-bg;
+    color: variables.$secondary-color;
+}
