@@ -259,4 +259,162 @@ header .hero__description-desc {
   transform: rotate(-45deg);
 }
 
+.clients {
+  background-color: #012F34;
+  padding: 140px 0 151px 0;
+  background-image: url(../images/clients-bg.png);
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .clients {
+    background-image: url(../images/clients-bg.png);
+    background-repeat: no-repeat;
+  }
+}
+.clients__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 70px;
+}
+.clients__block-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+.clients__block-font {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+}
+
+.start {
+  padding: 76px;
+  background-color: #F67E7E;
+  background-image: url(../../images/pink.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .start {
+    background-image: url(../../images/pik2x.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
+}
+.start .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: default;
+}
+.start__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012F34;
+}
+.start__btn {
+  transition: 0.3s;
+  border: 2px solid #012F34;
+  border-radius: 24px;
+  font-family: "Livvic";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012F34;
+  cursor: pointer;
+  padding: 9px 33px 11px 32px;
+  background-color: rgba(240, 248, 255, 0);
+}
+.start__btn:hover {
+  border: 2px solid #012F34;
+  border-radius: 24px;
+  font-family: "Livvic";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 9px 33px 11px 32px;
+  background-color: rgba(240, 248, 255, 0);
+  background-color: #012F34;
+}
+
+footer {
+  padding: 48px;
+  background-color: #002529;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+}
+footer .container .bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  row-gap: 25px;
+}
+footer .container .bar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 40px;
+}
+footer .container .bar__menu-link {
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+footer .container .bar__menu-link:hover {
+  color: #F67E7E;
+}
+footer .container .baro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+  min-width: 75%;
+}
+footer .container .baro__info-list {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+}
+footer .container .baro__icons {
+  column-gap: 16px;
+}
+footer .container .baro__icons-item {
+  display: inline-block;
+  cursor: pointer;
+}
+footer .container .baro__icons-item .svg {
+  width: 24px;
+  height: 24px;
+}
+footer .container .baro__icons-item:hover .svg {
+  fill: #F67E7E;
+  fill-rule: evenodd;
+}
+footer .container h6 {
+  margin-top: 53px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  align-items: flex-end;
+  justify-items: flex-end;
+}
+
 /*# sourceMappingURL=about.css.map */

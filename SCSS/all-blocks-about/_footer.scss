@@ -1,0 +1,65 @@
+@use'../variables';
+@use'../mixins';
+
+footer{
+    padding: 48px;
+    background-color: variables.$footer-bg;
+    .container{
+    @include mixins.flexbox(center, space-between);
+    .bar{
+        @include mixins.flexbox(flex-start, flex-start, column);
+        row-gap: 25px;
+        &__menu{
+            @include mixins.flexbox(center);
+            column-gap: 40px;
+            &-link{
+                padding: 10px 0;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                color: variables.$secondary-color;
+            }
+            &-link:hover{
+                color: variables.$primary-color;
+            }
+        }
+    }
+    .baro{
+        @include mixins.flexbox(center, space-between);
+        min-width: 75%;;
+        &__info{
+            &-list{
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 25px;
+                opacity: 0.6;
+            }
+        }
+        &__icons{
+            column-gap: 16px;
+            &-item{
+                display: inline-block;
+                cursor: pointer;
+                .svg{
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            &-item:hover .svg{
+                fill: variables.$primary-color;
+                fill-rule: evenodd;
+            }
+        }
+    }
+    h6{
+        margin-top: 53px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        opacity: 0.6;
+        align-items: flex-end;
+        justify-items: flex-end;
+    }
+  }
+}

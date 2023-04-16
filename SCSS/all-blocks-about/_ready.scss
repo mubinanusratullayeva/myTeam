@@ -1,0 +1,37 @@
+@use'../variables';
+@use'../mixins';
+
+.start{
+    padding: 76px;
+    background-color: variables.$primary-color;
+    background-image: url(../../images/pink.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx){
+        background-image: url(../../images/pik2x.png);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+    }
+    .container{
+        @include mixins.flexbox(center, space-around);
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: variables.$some-bg;
+    }
+    &__btn{
+        transition: 0.3s;
+        @include mixins.btn(variables.$some-bg, variables.$some-bg,);
+    }
+    &__btn:hover{
+        @include mixins.btn(variables.$some-bg, variables.$secondary-color,);
+        background-color: variables.$some-bg;
+    }
+}
