@@ -1,0 +1,31 @@
+@use'../variables';
+@use'../mixins';
+
+.clients{
+    background-color: variables.$some-bg;
+    padding: 140px 0 151px 0;
+    background-image: url(../images/clients-bg.png);
+    background-repeat: no-repeat;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx){
+        background-image: url(../images/clients-bg.png);
+        background-repeat: no-repeat;
+    }
+    &__block{
+        &-title{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+        }
+        @include mixins.flexbox(center, center, column);
+        row-gap: 70px;
+        &-font{
+            min-width: 100%;
+            @include mixins.flexbox(center, space-between);
+        }
+    }
+}
