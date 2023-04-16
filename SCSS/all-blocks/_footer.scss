@@ -1,0 +1,53 @@
+@use'../mixins';
+@use'../variables';
+footer {
+    background-color: variables.$footer-bg;
+}
+
+.footer-div {
+    @include mixins.flexbox(center);
+}
+
+.footer-img {
+    padding-top: 48px;
+}
+
+footer ul li a {
+    font-size: 18px;
+    color: variables.$secondary-color;
+}
+
+footer ul {
+    padding-top: 25px;
+    padding-bottom: 55px;
+    @include mixins.flexbox(center);
+    column-gap: 40px;
+}
+
+.footer-div p {
+    padding-left: 125px;
+    width: 254px;
+    font-size: 15px;
+    color: variables.$secondary-color;
+    opacity: 0.6;
+}
+
+.images {
+    @include mixins.flexbox(center, flex-end);
+    column-gap: 16px;
+}
+
+.img-text h6 {
+    font-size: 15px;
+    color: variables.$secondary-color;
+    opacity: 0.6;
+    padding-top: 51px;
+}
+
+.img-text {
+    padding-left: 410px;
+}
+
+.facebook {
+    cursor: pointer;
+}

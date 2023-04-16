@@ -127,7 +127,6 @@ h1 span {
 }
 
 .header-img {
-  justify-self: flex-end;
   padding-top: 155px;
 }
 
@@ -136,6 +135,256 @@ h1 span {
   align-items: end;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.teams {
+  background: #012F34;
+  background-image: url(../images/bg-section1.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.section1-display_flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: default;
+}
+
+.small-cards {
+  padding-bottom: 140px;
+  padding-top: 198px;
+  row-gap: 32px;
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.div1-hr {
+  padding-top: 140px;
+}
+
+.div1-hr hr {
+  border: none;
+  width: 50px;
+  height: 4px;
+  background: #F67E7E;
+}
+
+h2 {
+  padding-top: 54px;
+  width: 445px;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.small-card1 {
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 23px;
+}
+
+.texts-card_small h3 {
+  font-size: 18px;
+  line-height: 28px;
+  color: #F67E7E;
+}
+
+.texts-card_small p {
+  width: 447px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  opacity: 0.8;
+  padding-top: 16px;
+}
+
+.border-radius__img {
+  position: relative;
+  border-radius: 50%;
+  min-width: 56px;
+  height: 56px;
+  background: #2C6269;
+}
+
+.border-radius__img img {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+
+.section2 {
+  background: #004047;
+  background-repeat: no-repeat;
+  background-image: url(../images/hr-hr.png);
+}
+
+.stories {
+  padding-bottom: 151px;
+  background-image: url(../images/oval-hr.png);
+  background-position-x: right;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+.Delivering {
+  padding-top: 140px;
+  margin: 0 auto;
+  width: 850px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.Delivering span {
+  font-size: 48px;
+  color: #79C8C7;
+}
+
+.section-cards {
+  padding-top: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+}
+
+.section2-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section2-card p {
+  width: 325px;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section2-card h6 {
+  font-size: 18px;
+  color: #79C8C7;
+  padding-top: 24px;
+}
+
+.section2-card h5 {
+  font-size: 13px;
+  padding-bottom: 32px;
+  padding-top: 2px;
+}
+
+.oval-img {
+  width: 62px;
+  height: 62px;
+}
+
+.started {
+  background: #F67E7E;
+  background-image: url(../../images/bg-section.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+.text-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+}
+
+.text-btn h4 {
+  padding-bottom: 76px;
+  padding-top: 76px;
+  font-size: 48px;
+  color: #012F34;
+}
+
+.text-btn button {
+  cursor: pointer;
+  font-size: 18px;
+  color: #012F34;
+  width: 153px;
+  height: 48px;
+  background-color: transparent;
+  border: 2px solid #012F34;
+  border-radius: 24px;
+  transition: 0.2s;
+}
+
+.text-btn button:hover {
+  transition: 0.2s;
+  background-color: #012F34;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #002529;
+}
+
+.footer-div {
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+}
+
+.footer-img {
+  padding-top: 48px;
+}
+
+footer ul li a {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+footer ul {
+  padding-top: 25px;
+  padding-bottom: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 40px;
+}
+
+.footer-div p {
+  padding-left: 125px;
+  width: 254px;
+  font-size: 15px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: default;
+  column-gap: 16px;
+}
+
+.img-text h6 {
+  font-size: 15px;
+  color: #ffffff;
+  opacity: 0.6;
+  padding-top: 51px;
+}
+
+.img-text {
+  padding-left: 410px;
+}
+
+.facebook {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

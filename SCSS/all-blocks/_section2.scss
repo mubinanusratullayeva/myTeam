@@ -1,0 +1,64 @@
+@use'../mixins';
+@use'../variables';
+.section2 {
+    background: #004047;
+    background-repeat: no-repeat;
+    background-image: url(../images/hr-hr.png);
+}
+
+.stories {
+    padding-bottom: 151px;
+    background-image: url(../images/oval-hr.png);
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+.Delivering {
+    padding-top: 140px;
+    margin: 0 auto;
+    width: 850px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 48px;
+    color: variables.$secondary-color;
+}
+
+.Delivering span {
+    font-size: 48px;
+    color: variables.$Rapture-Blue;
+}
+
+.section-cards {
+    padding-top: 56px;
+    @include mixins.flexbox(center, space-between)
+}
+
+.section2-card {
+    @include mixins.flexbox(center, center, column)
+}
+
+.section2-card p {
+    width: 325px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: variables.$secondary-color;
+}
+
+.section2-card h6 {
+    font-size: 18px;
+    color: variables.$Rapture-Blue;
+    padding-top: 24px;
+}
+
+.section2-card h5 {
+    font-size: 13px;
+    padding-bottom: 32px;
+    padding-top: 2px;
+}
+
+.oval-img {
+    width: 62px;
+    height: 62px;
+}
